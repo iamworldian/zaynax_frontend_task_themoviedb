@@ -25,13 +25,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        
+      <body className="flex flex-col">
+      <Header/>
         <Provider store={store}>
-          <Header/>
+          
           {children}
-          <Footer/>
+          
         </Provider>
+        <Footer/>
         </body>
     </html>
   );
