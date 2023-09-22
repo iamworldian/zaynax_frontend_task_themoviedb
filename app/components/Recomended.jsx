@@ -134,8 +134,8 @@ const Recomended = () => {
       </div>
 
       <div className="w-full grid lg:grid-cols-6 sm:grid-cols-2 sm:gap-0 gap-1">
-        {movies?.map((m) => (
-          <Card cardData={m} posterUrl={posterUrl} />
+        {movies?.map((m,index) => (
+          <Card key={index} cardData={m} posterUrl={posterUrl} />
         ))}
       </div>
 

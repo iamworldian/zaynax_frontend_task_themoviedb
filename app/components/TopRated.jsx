@@ -66,8 +66,8 @@ const TopRated = () => {
             
              
                 {
-                  movies?.map((m) => {
-                    return <Card cardData={m} posterUrl={posterUrl}/>
+                  movies?.map((m,index) => {
+                    return <Card key={index} cardData={m} posterUrl={posterUrl}/>
                   })
                 }
 

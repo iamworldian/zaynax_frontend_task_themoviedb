@@ -36,7 +36,7 @@ const MovieDetails = () => {
 
 
       <div className="w-full flex flex-col">
-          <p>Cast and Crew</p>
+          <p className="m-5">Cast and Crew</p>
           <div className="grid lg:grid-cols-6 sm:grid-cols-2 gap-5 my-auto">
             {creditsData.data?.cast.map((actor, index) => (
               <div key={index} className="flex flex-col">
@@ -59,7 +59,7 @@ const MovieDetails = () => {
 
 
         <div className="md:w-2/6 sm:w-full flex flex-col items-start justify-start">
-          <p> Trailer </p>
+          <p className="m-5"> Trailer </p>
            <VideosSection data={data} loading={loading}/>
         </div>
 

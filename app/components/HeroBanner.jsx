@@ -25,7 +25,7 @@ const HeroBanner = () => {
 
   console.log(backDrop);
   
-  const searchQueryHandler = (event:any) => {
+  const searchQueryHandler = (event) => {
       if(event.key === "Enter" && query.length > 0){
         router.push(`/search/${query}`);
       }

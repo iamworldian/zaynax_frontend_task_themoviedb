@@ -28,7 +28,7 @@ const DetailBanner = ({ logo_path, movieDetails }) => {
     setLogo(logoPath);
   });
 
-  const searchQueryHandler = (event: any) => {
+  const searchQueryHandler = (event) => {
     if (event.key === "Enter" && query.length > 0) {
       router.push(`/search/${query}`);
     }
